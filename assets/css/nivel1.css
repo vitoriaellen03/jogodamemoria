@@ -1,0 +1,118 @@
+/*Importando fontes*/
+@import url("cores.css");
+@import url("../css/fonts.css");
+
+/*Resetando css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*style css*/
+body{
+    width: auto;
+    height: auto;
+    display:flex;
+  
+    background:url(../img/fundofacil.png) ;
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 640px;
+    height: 640px;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    padding-bottom: 130px;   
+}
+
+.lvl{
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    border: solid 4px;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 5%;
+}
+
+.card{
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    border: solid 4px;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 5%;
+    
+}
+
+.card:active{
+    transform: scale(.95);
+    transition: transform .1,5s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+.frente, .verso{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    
+}
+
+.frente{
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    background-color: #b2f593;
+}
+
+.verso{
+    background-color: #b4f510;
+}
+
+
+/*Contador*/
+p{  
+    padding: 7%;
+    margin-bottom: 5%;
+    display: flex;
+    font-size: 50px;
+    height: auto;
+    width: 600px;
+    margin: 50px 0px 0px 0px;
+    padding-left: 150px;
+    font-family: 'VCROSDMONO';
+    color: white;
+
+}
+
+#countdown{
+    padding-left: 220px;
+    color: white;
+}
+
+.contador{
+    border: 2px;
+    margin-top: 7%;    
+}

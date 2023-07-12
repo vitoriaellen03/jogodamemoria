@@ -1,0 +1,157 @@
+@import url("cores.css");
+@import url("../css/fonts.css");
+@import url("../img");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VCROSDMONO';
+}
+
+/* BODY E CONTAINER */
+body {
+    margin: 180px;
+    text-align: center;
+    
+    color: var(--whiteColor);
+    background-color: var(--secondaryColor);
+}
+
+.description {
+    font-size: 17pt;
+    text-transform: uppercase;
+
+    font-family: 'VCROSDMONO';
+}
+
+.gif {
+  margin:45px;
+}
+
+/*Menu*/
+header .menu {
+    position:auto;
+    max-width: 180px;
+    width: 100%;
+    margin: 4% auto;
+    padding: 0;
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 20% 0;
+}
+
+header .menu ul li {
+    border: 2px dashed var(--whiteColor);
+    padding: 7%;
+    margin-bottom: 5%;
+  
+    font-size: 18pt;
+    text-decoration: none;
+
+    color: var(--whiteColor);
+}
+
+header .menu ul li a {
+    font-size: 18pt;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    color: var(--whiteColor);
+
+    font-family: 'VCROSDMONO';
+    transition: 0.5s;
+}
+
+header .menu ul li:hover {
+    background-color: var(--primaryColor);
+    transition: 0.5s;
+}
+
+header .menu ul li a span {
+  display:none;
+}
+
+
+/*Menu parte de dentro*/
+header .menu ul li ul{
+  position: auto;
+  display:none;
+}
+
+header .menu ul li ul li:hover{
+  background-color: var(--greenColor);
+  transition: 0.5s;
+}
+
+header .menu ul li ul li{
+  width:85%;
+}
+
+header .menu ul li:hover > ul{
+  display:initial;
+}
+
+
+/*Voltar*/
+header .a {
+    border: 2px dashed var(--whiteColor);
+    padding: 7%;
+    margin-bottom: 5%;
+
+    font-size: 18pt;
+    text-decoration: none;
+
+    color: var(--whiteColor);
+}
+
+.return {
+    width: 150px;
+    padding: 10px;
+
+    background: none;
+    cursor: pointer;
+
+    font-size: 12pt;
+    border: 2px dashed var(--whiteColor);
+    border-radius: 5px;
+    color: var(--whiteColor);
+
+    transition: 0.5s;
+}
+
+.return:hover {
+    background-color: var(--primaryColor);
+    transition: 0.5s;
+}
+
+
+/*Níveis*/
+.niveis{
+   margin: 20px 0 0 20px;
+   list-style:none;
+   padding-right: 500px;
+}
+
+.jogador{
+   position: relative; /* Para que a imagem não saia fora do link */
+   display:block;
+   padding:5px;
+
+#imagem{
+   width: 100px;
+   height: 100px;
+}
+
+#imagem img{
+   width: 100%;
+   height: 100%;
+}
+  
+}
+
+
+
+

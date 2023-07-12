@@ -1,0 +1,63 @@
+@import url("cores.css");
+@import url("../css/fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VCROSDMONO';
+}
+
+/* BODY E CONTAINER */
+body {
+    margin: auto;
+    text-align: center;
+
+    color: var(--whiteColor);
+    background-color: var(--secondaryColor);
+}
+
+/* HEADER */
+.title {
+    margin-top: 2%;
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+/* MENU */
+.conteudo {
+    max-width: 850px;
+    width: 100%;
+    margin: 4% auto;
+    padding: 0;
+}
+
+.textcont {
+    border: 2px dashed var(--whiteColor);
+    padding: 7%;
+    margin-bottom: 5%;
+
+    font-size: 18pt;
+    text-decoration: none;
+
+    color: var(--whiteColor);
+}
+
+.return {
+    width: 150px;
+    padding: 10px;
+
+    background: none;
+    cursor: pointer;
+
+    font-size: 12pt;
+    border: 2px dashed var(--whiteColor);
+    border-radius: 5px;
+    color: var(--whiteColor);
+
+    transition: 0.5s;
+}
+
+.return:hover {
+    background-color: var(--primaryColor);
+    transition: 0.5s;
+}
